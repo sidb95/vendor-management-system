@@ -12,6 +12,7 @@ from .forms import UserForm
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
+
 def get_details(request):
 	# if this is a POST request we need to process the form data
     if request.method == "POST":
@@ -22,7 +23,7 @@ def get_details(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect("/api/vendors")
+            return HttpResponseRedirect("/login/")
 
     # if a GET (or any other method) we'll create a blank form
     else:
