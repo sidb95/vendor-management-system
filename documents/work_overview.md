@@ -12,4 +12,8 @@
     4. blank lines:
         - 2 blank lines top-level function and class definitions,
         - single blank line method definitions inside a class,
-        - 
+
+##### 8:21 AM
+
+1. Write User models in ./vendor/models.py
+
