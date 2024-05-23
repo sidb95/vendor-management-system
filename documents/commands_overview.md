@@ -18,5 +18,7 @@ All the commands run:
 - python3 manage.py migrate (failed)
 - pip3 install django-crispy-forms
 - python3 manage.py migrate (failed)
+- python3 manage.py migrate (Success)
+- python3 manage.py makemigrations (Success)
+- python3 manage.py migrate (Success)
 - 
-- python3 manage.py makemigrations

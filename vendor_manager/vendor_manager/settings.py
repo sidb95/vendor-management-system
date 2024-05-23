@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'login',
     'vendor',
+    'bootstrap4',
     'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
