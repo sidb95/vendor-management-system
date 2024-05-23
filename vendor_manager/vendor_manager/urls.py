@@ -26,7 +26,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('/api/vendors/', include('vendor.urls')),
+    path('/api/vendors/', include('vendor.urls'), name="index"),
     path('', include('login.urls'))
 ]
 

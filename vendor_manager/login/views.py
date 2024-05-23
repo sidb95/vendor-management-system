@@ -8,6 +8,28 @@ from urllib.parse import urlencode
 from django.contrib import messages
 from .models import Sessions
 from .models import User
+from .forms import UserForm
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+
+def get_details(request):
+	# if this is a POST request we need to process the form data
+    if request.method == "POST":
+        # create a form instance and populate it with data from the request:
+        form = UserForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect("/api/vendors")
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = NameForm()
+
+    return render(request, "name.html", {"form": form})
+
 
 def index(request):
 	return render(request, 'login/index.html')

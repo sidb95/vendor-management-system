@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="../../static/css/navbar.css">
 	</head>
 	<body>
+		<h1 style="text-align: center;">
+			Vendor Management System
+		</h1>
 		<div class="container">
 			<nav class="vertical-nav bg-white" id="sidebar">
 				<div>
@@ -15,10 +18,14 @@
 					<span>playerofiiith@gmail.com</span>
 						<br>
 					<img src="../../static/images/email.png">
-					<span>bhatoresiddharth@gmail.com</span>
+					<span>sbhatore95@gmail.com</span>
 						<br>
 					<img src="../../static/images/github.svg">
-					<span>sidb95, sbhatore95</span>
+					<span>
+						sidb95, <br>
+						<img src="../../static/images/github.svg">
+						sbhatore95
+					</span>
 				</div>
 				 <div class="media d-flex align-items-center">
 				 	<img src="../../static/images/logo.png" alt="..." class="">
@@ -30,7 +37,19 @@
         				</a>
 					</li>
 				</ul>
+				<ul class="nav flex-column bg-white">
+					<li class="nav-item">
+						<a href="{% url 'login:login' %}" class="nav-link text-dark font-italic bg-light">
+            				Login
+        				</a>
+					</li>
+				</ul>
 		    </nav>
+			<form action="get_details" method="post" style="text-align: center;">
+				<label for="username">Your name: </label>
+				<input id="name" type="text" name="your_name" value="{{ current_name }}">
+				<input type="submit" value="OK">
+			</form>
         </div>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
