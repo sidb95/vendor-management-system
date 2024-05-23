@@ -13,5 +13,4 @@ class VendorView(View):
         users = User.objects.all()
         for i in range (0, len(users)):
             pass
-
-
+        return HttpResponse("Hello, World!")

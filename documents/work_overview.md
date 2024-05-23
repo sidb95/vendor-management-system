@@ -15,5 +15,22 @@
 
 ##### 8:21 AM
 
-1. Write User models in ./vendor/models.py
+1. Write User models in ./vendor/models.py,
+2. Upgrade Python version to 3.12.3 (Success, 
+python3 --version :- 3.12.3),
+3. Upgrade Django version to 5.0.6,
+
+##### 9:30 AM
+
+1. Struggling with URLs (for homepage),
+2. Make another app 'login',
+3. make session model for 'login',
+
+##### 10:15 AM
+1. struggling with authentication,
+2. making views for logging in,
+3. Still struggling
+
+##### 10:42 AM
+1. 
 
