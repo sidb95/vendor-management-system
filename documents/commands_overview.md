@@ -21,4 +21,9 @@ All the commands run:
 - python3 manage.py migrate (Success)
 - python3 manage.py makemigrations (Success)
 - python3 manage.py migrate (Success)
-- 
+
+#### 24 May 2024
+
+Commands that are useful:
+1. python3 -m django-startproject
+
